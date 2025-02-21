@@ -110,3 +110,52 @@ body {
     bottom: 50px;
     opacity: 1;
 }
+
+/* MEDIA QUERY */
+@media (max-width: 800px) {
+    body {
+        & .logo {
+            width: 300px;
+        }
+
+        & .container-input {
+            & span {
+                position: relative;
+                left: 20px;
+
+                & #valor {
+                    position: relative;
+                    left: 1px;
+                    font-size: 18px;
+                }
+            }
+
+            & .slider {
+                display: flex;
+                align-items: center;
+                width: 90%;
+            }
+
+            & .button-cta {
+                display: flex;
+                align-items: center;
+                width: 90%;
+                padding-left: 32%;
+            }
+        }
+
+        & .container-password {
+            & .title {
+                font-size: 20px;
+            }
+
+            & .password {
+                width: 90%;
+            }
+
+            & .tooltip {
+                width: 90%;
+            }
+        }
+    }
+}
